@@ -1,0 +1,62 @@
+.container {
+  //min-height: 250px;
+}
+.btn,
+.form-control{
+  box-shadow: none;
+}
+a, a:hover, a:focus, a:active, button, button:focus, button:active,.form-control:focus, .form-control:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.text_red{
+  color: blue !important;
+}
+#board{
+  min-height: 600px;
+  max-width: 600px;
+  background: aquamarine;
+  border-radius: 300px;
+}
+table{
+  th{width: 15px; }
+
+}
+.table-bordered td,
+.table-bordered th{border: 1px solid black !important;}
+
+#messageArea{
+  top: 0;
+  left: 0;
+  width: 100px;
+  min-height: 50px;
+  border: 1px solid black;
+}
+.form_guess{
+  bottom: 0;
+  right: 0;
+}
+.hit{
+  position: relative;
+  background: black;
+  transition: 300ms;
+  &:after{
+    content: "HIT";
+    color: white;
+    position: absolute;
+    top: 12px;
+    left: 14px;
+  }
+}
+.miss{
+  position: relative;
+  background: red;
+  transition: 300ms;
+  &:after{
+    content: "MISS";
+    color: white;
+    position: absolute;
+    top: 12px;
+    left: 11px;
+  }
+}
